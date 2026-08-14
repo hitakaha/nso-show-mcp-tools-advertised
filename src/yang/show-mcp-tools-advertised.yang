@@ -1,0 +1,39 @@
+module show-mcp-tools-advertised {
+
+  namespace "http://example.com/show-mcp-tools-advertised";
+  prefix show-mcp-tools-advertised;
+
+  import ietf-inet-types {
+    prefix inet;
+  }
+  import tailf-common {
+    prefix tailf;
+  }
+  import tailf-ncs {
+    prefix ncs;
+  }
+
+  description
+    "Bla bla...";
+
+  revision 2016-01-01 {
+    description
+      "Initial revision.";
+  }
+
+  container show {
+    container mcp-tools {
+      tailf:info "MCP tools commands";
+      tailf:action advertised {
+        tailf:exec "show-mcp-tools-advertised.sh";
+        tailf:info "List all advertised MCP tools";
+        output {
+          leaf result {
+            type string;
+          }
+        }
+      }
+    }
+  }
+
+}
