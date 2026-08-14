@@ -13,9 +13,10 @@ This repository provides an extension for Cisco NSO to add the `show mcp-tools a
    ```bash
    make install
 
-4. Load the package
+4. Load the package on NSO
    ```
    admin@ncs# packages reload
+   ```
 
 ## Usage
 To view the advertised MCP tools, run the following command in the NSO CLI:
