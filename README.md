@@ -6,8 +6,8 @@ This repository provides an extension for Cisco NSO to add the `show mcp-tools a
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/hitakaha/nso-show-mcp-tools-advertised.git
+   cd nso-show-mcp-tools-advertised/src
 
 2. Execute following in src folder
    ```bash
