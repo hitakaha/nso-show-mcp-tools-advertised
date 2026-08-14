@@ -10,14 +10,17 @@ This repository provides an extension for Cisco NSO to add the `show mcp-tools a
    cd <repository-name>
 
 2. Execute following in src folder
+   ```bash
    make install
 
-3. Load the package
+4. Load the package
+   ```
    admin@ncs# packages reload
 
 ## Usage
 To view the advertised MCP tools, run the following command in the NSO CLI:
 
+```
 admin@ncs# show mcp-tools advertised
 result 
 --------------------------------------------------------------------------------
@@ -37,3 +40,4 @@ Tool Name:    tfnm_ncs_state_set_read_only
 Description: NSO Action: set-read-only (path: 
              /tfnm:ncs-state/set-read-only)
 --------------------------------------------------------------------------------
+```
